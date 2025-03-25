@@ -1,0 +1,28 @@
+.container {
+    margin: 1em auto;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1em;
+}
+
+.my-card {
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-card img {
+    background-size: cover;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
