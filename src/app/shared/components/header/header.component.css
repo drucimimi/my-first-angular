@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    position: fixed;
+    top: 0;
+    background-color: green;
+    min-width: 100%;
+    color: white;
+}

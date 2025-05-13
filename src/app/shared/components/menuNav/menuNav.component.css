@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}

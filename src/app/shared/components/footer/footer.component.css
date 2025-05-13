@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    position: fixed;
+    bottom: 0;
+    background-color: green;
+    min-width: 100%;
+    color: white;
+}
+.footer a {
+    color: white;
+}

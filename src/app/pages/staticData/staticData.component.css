@@ -1,0 +1,27 @@
+.static-data {
+    margin-top: 5%;
+    padding: 1em;
+}
+
+.container {
+    margin: 1em auto;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1em;
+}
+
+.my-card {
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-card img {
+    background-size: cover;
+}
