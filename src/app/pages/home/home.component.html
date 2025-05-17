@@ -2,9 +2,28 @@
   <section>
     <h1>Ma Todo List !</h1>
     <div class="container-todo">
-      <p><mat-checkbox formControlName="useAngularComponents">Utiliser les composants par défaut proposés par Material Angular</mat-checkbox></p>
-      <p><mat-checkbox formControlName="createOwnComponents">Créer ses propres composants afin de les intégrer à n'importe quelle page</mat-checkbox></p>
-      <p><mat-checkbox formControlName="createOwnRoutes">Créer ses propres routes pour naviguer d'une page à une autre</mat-checkbox></p>
+      <!-- Sur le PC Accenture, penser à cocher les 3 premières checkbox -->
+      <p>
+        <mat-checkbox formControlName="useAngularComponents" [checked]="isChecked('useAngularComponents')" (change)="onCheckboxChange('useAngularComponents', $event.checked)">Utiliser les composants par défaut proposés par Material Angular</mat-checkbox>
+      </p>
+      <p>
+        <mat-checkbox formControlName="createOwnComponents" [checked]="isChecked('createOwnComponents')" (change)="onCheckboxChange('createOwnComponents', $event.checked)">Créer ses propres composants afin de les intégrer à n'importe quelle page</mat-checkbox>
+      </p>
+      <p>
+        <mat-checkbox formControlName="createOwnRoutes" [checked]="isChecked('createOwnRoutes')" (change)="onCheckboxChange('createOwnRoutes', $event.checked)">Créer ses propres routes pour naviguer d'une page à une autre</mat-checkbox>
+      </p>
+      <p>
+        <mat-checkbox formControlName="createStaticDataPage" [checked]="isChecked('createStaticDataPage')" (change)="onCheckboxChange('createStaticDataPage', $event.checked)">Créer une page avec des données statiques</mat-checkbox>
+      </p>
+      <p>
+        <mat-checkbox formControlName="createPublicAPIDataPage" [checked]="isChecked('createPublicAPIDataPage')" (change)="onCheckboxChange('createPublicAPIDataPage', $event.checked)">Créer une page avec récupération des données d'une API publique</mat-checkbox>
+      </p>
+      <p>
+        <mat-checkbox formControlName="createPrivateAPIDataPage" [checked]="isChecked('createPrivateAPIDataPage')" (change)="onCheckboxChange('createPrivateAPIDataPage', $event.checked)">Créer une page avec récupération des données d'une API privée</mat-checkbox>
+      </p>
+      <p>
+        <mat-checkbox formControlName="testAppComponents" [checked]="isChecked('testAppComponents')" (change)="onCheckboxChange('testAppComponents', $event.checked)">Tester les composants et pages de l'application</mat-checkbox>
+      </p>
     </div>
   </section>
 </main> 
